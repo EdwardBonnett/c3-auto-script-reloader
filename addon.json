@@ -5,8 +5,8 @@
 	"id": "EdwardBonnett_ScriptReload",
 	"version": "1.0.0.0",
 	"author": "Edward Bonnett",
-	"website": "https://www.edwardbonnett.com",
-	"documentation": " ",
+	"website": "https://github.com/EdwardBonnett/c3-auto-script-reloader",
+	"documentation": "https://github.com/EdwardBonnett/c3-auto-script-reloader",
 	"description": "Auto reload script files in local folder projects. Recommend only if you really know what you're doing. Potentially could crash your project or stop working at any release.",
 	"editor-scripts": [
 						"plugin.js",
