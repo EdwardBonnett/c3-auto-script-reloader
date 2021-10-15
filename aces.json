@@ -1,2 +1,10 @@
 ﻿{
+    "custom": {
+		"conditions": [
+        ],
+        "actions": [
+        ],
+        "expressions": [
+        ]
+    }
 }
