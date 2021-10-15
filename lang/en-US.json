@@ -1,0 +1,32 @@
+﻿{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for ScriptReload.",
+	"text": {
+		"plugins": {
+			"edwardbonnett_scriptreload": {
+				"name": "Script Reload",
+				"description": "Auto reload script files in local folder projects. Recommend only if you really know what you're doing. Potentially could crash your project or stop working at any release.",
+				"help-url": "",
+				"properties": {
+					"script-refresh": {
+						"name": "Script refresh",
+						"desc": "How frequently to check for file changes in ms (defaults to 2000 ms)"
+					},
+                    "log-messages": {
+						"name": "Log messages",
+						"desc": "Log to the console a check is run, or a file is changed for debugging purposes"
+					}
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+				},
+				"actions": {
+
+				},
+				"expressions": {
+				}
+			}
+		}
+	}
+}

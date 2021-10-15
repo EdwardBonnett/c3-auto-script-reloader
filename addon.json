@@ -1,0 +1,31 @@
+﻿{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Script reload",
+	"id": "EdwardBonnett_ScriptReload",
+	"version": "1.0.0.0",
+	"author": "Edward Bonnett",
+	"website": "https://www.edwardbonnett.com",
+	"documentation": " ",
+	"description": "Auto reload script files in local folder projects. Recommend only if you really know what you're doing. Potentially could crash your project or stop working at any release.",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c3runtime/plugin.js",
+		"c3runtime/type.js",
+		"c3runtime/instance.js",
+		"c3runtime/conditions.js",
+		"c3runtime/actions.js",
+		"c3runtime/expressions.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.svg",
+		"instance.js",
+		"plugin.js",
+		"type.js"
+	]
+}
