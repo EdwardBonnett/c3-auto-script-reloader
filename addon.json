@@ -3,7 +3,7 @@
 	"type": "plugin",
 	"name": "Script reload",
 	"id": "EdwardBonnett_ScriptReload",
-	"version": "1.0.0.0",
+	"version": "1.0.0.2",
 	"author": "Edward Bonnett",
 	"website": "https://github.com/EdwardBonnett/c3-auto-script-reloader",
 	"documentation": "https://github.com/EdwardBonnett/c3-auto-script-reloader",

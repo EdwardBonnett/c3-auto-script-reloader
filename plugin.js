@@ -14,7 +14,7 @@
 	const PLUGIN_ID = "EdwardBonnett_ScriptReload";
 	////////////////////////////////////////////
 
-	const PLUGIN_VERSION = "1.0.0.0";
+	const PLUGIN_VERSION = "1.0.0.2";
 	const PLUGIN_CATEGORY = "other";
 
 	const PLUGIN_CLASS = SDK.Plugins.EdwardBonnett_ScriptReload = class MyCustomPlugin extends SDK.IPluginBase

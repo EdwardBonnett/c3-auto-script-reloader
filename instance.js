@@ -71,7 +71,7 @@
                                 if (file.name.endsWith('.js') && (!scriptFiles[file.name] || scriptFiles[file.name] !== file.lastModified)) {
                                     scriptFiles[file.name] = file.lastModified;
                                     if (!initialLoad) {
-                                        const blob = file.slice(0);
+                                        const blob = file.slice(0, file.size, 'text/javascript');
                                         if (logMessages) console.log('Script reload - ' + file.name + ' reloaded');
                                         project.AddOrReplaceProjectFile(blob, file.name, 'script');
                                     }
