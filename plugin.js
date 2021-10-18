@@ -40,6 +40,8 @@
 				new SDK.PluginProperty("check", "log-messages", false)
 			]);
 
+		
+
 			SDK.Lang.PopContext();		// .properties
 
 			SDK.Lang.PopContext();
