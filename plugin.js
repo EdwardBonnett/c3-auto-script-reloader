@@ -11,13 +11,13 @@
 	// Only the plugin name is displayed in the editor, so to rename your plugin change the name but NOT the ID.
 	// If you want to completely replace a plugin, make it deprecated (it will be hidden but old projects keep working),
 	// and create an entirely new plugin with a different plugin ID.
-	const PLUGIN_ID = "EdwardBonnett_ScriptReload";
+	const PLUGIN_ID = "EdwardBonnett_VsCodePlugin";
 	////////////////////////////////////////////
 
-	const PLUGIN_VERSION = "1.0.0.2";
+	const PLUGIN_VERSION = "1.0.0.0";
 	const PLUGIN_CATEGORY = "other";
 
-	const PLUGIN_CLASS = SDK.Plugins.EdwardBonnett_ScriptReload = class MyCustomPlugin extends SDK.IPluginBase
+	const PLUGIN_CLASS = SDK.Plugins.EdwardBonnett_VsCodePlugin = class MyCustomPlugin extends SDK.IPluginBase
 	{
 		constructor()
 		{
@@ -36,8 +36,6 @@
 			SDK.Lang.PushContext(".properties");
 
 			this._info.SetProperties([
-				new SDK.PluginProperty("integer", "script-refresh", 2000),
-				new SDK.PluginProperty("check", "log-messages", false)
 			]);
 
 		

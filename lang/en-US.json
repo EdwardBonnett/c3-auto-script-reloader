@@ -3,19 +3,11 @@
 	"fileDescription": "Strings for ScriptReload.",
 	"text": {
 		"plugins": {
-			"edwardbonnett_scriptreload": {
-				"name": "Script Reload",
-				"description": "Auto reload script files in local folder projects. Recommend only if you really know what you're doing. Potentially could crash your project or stop working at any release.",
+			"edwardbonnett_vscodeplugin": {
+				"name": "VS Code Plugin",
+				"description": "Connects VS Code to construct3, VS Code extension required",
 				"help-url": "https://github.com/EdwardBonnett/c3-auto-script-reloader",
 				"properties": {
-					"script-refresh": {
-						"name": "Script refresh",
-						"desc": "How frequently to check for file changes in ms (defaults to 2000 ms)"
-					},
-                    "log-messages": {
-						"name": "Log messages",
-						"desc": "Log to the console a check is run, or a file is changed for debugging purposes"
-					}
 				},
 				"aceCategories": {
                     "custom": "Custom"

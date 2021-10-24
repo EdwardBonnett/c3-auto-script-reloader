@@ -1,5 +1,5 @@
 {
-  "name": "singleglobalplugin",
+  "name": "construct3-vscode",
   "version": "0.0.1",
   "description": "",
   "main": "instance.js",

@@ -3,7 +3,7 @@
 {
 	const C3 = self.C3;
 
-	C3.Plugins.EdwardBonnett_ScriptReload.Type = class SingleGlobalType extends C3.SDKTypeBase
+	C3.Plugins.EdwardBonnett_VsCodePlugin.Type = class SingleGlobalType extends C3.SDKTypeBase
 	{
 		constructor(objectClass)
 		{

@@ -1,7 +1,7 @@
 "use strict";
 
 {
-	self.C3.Plugins.EdwardBonnett_ScriptReload.Acts =
+	self.C3.Plugins.EdwardBonnett_VsCodePlugin.Acts =
 	{
 	};
 }

@@ -3,7 +3,7 @@
 {
 	const SDK = self.SDK;
 
-	const PLUGIN_CLASS = SDK.Plugins.EdwardBonnett_ScriptReload;
+	const PLUGIN_CLASS = SDK.Plugins.EdwardBonnett_VsCodePlugin;
 
 	PLUGIN_CLASS.Type = class MyCustomPluginType extends SDK.ITypeBase
 	{
