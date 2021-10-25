@@ -1,13 +1,13 @@
 ﻿{
 	"is-c3-addon": true,
 	"type": "plugin",
-	"name": "Script reload",
+	"name": "VS Code Plugin",
 	"id": "EdwardBonnett_VsCodePlugin",
 	"version": "1.0.0.0",
 	"author": "Edward Bonnett",
-	"website": "https://github.com/EdwardBonnett/c3-auto-script-reloader",
-	"documentation": "https://github.com/EdwardBonnett/c3-auto-script-reloader",
-	"description": "Connects VS Code to construct3, VS Code extension required",
+	"website": "https://github.com/EdwardBonnett/c3-auto-script-reloader/tree/vscode",
+	"documentation": "https://github.com/EdwardBonnett/c3-auto-script-reloader/tree/vscode",
+	"description": "Connects VS Code to Construct 3, VS Code extension \"Construct 3 Tools\" required",
 	"editor-scripts": [
 						"plugin.js",
 						"type.js",

@@ -1,9 +1,16 @@
 # c3-auto-script-reloader
-Construct 3 plugin to auto reload scripts when using an external editor
+Construct 3 plugin which provides advanced features when paired with the VS Code extension here:
+https://marketplace.visualstudio.com/items?itemName=EdwardBonnett.c3-vscode-extension
+
+
+## Features
+### Script reload
+If you have the Construct 3 VS Code plugin then the script folder will be automatically refreshed every time you save a file from with VS Code.
+
+### Remote debugging
+If you have the Construct 3 VS Code plugin then running / stopping the debug instance from within VS Code will automatically start / stop your game for you. Note: The construct 3 window requires to be focued / visible periodically, otherwise the game window may not play automatically.
+## How to use
+Install the addon as you usually would, then add a single instance of the 'VS Code Plugin' object to your project. When you have the Construct 3 Tools extension installed for VS Code it will automatically connect to Construct 3 from the editor.
 
 ## Disclaimer
-A lot of what's needed to do this isn't currently exposed to the Plugin SDK provided by Construct so this is liable to break and / or cause exceptions to be thrown
-I take no responsibility for any corruption of your project.
-
-## How to use
-Install the addon as you usually would, then add a single instance of the 'Script Reloader' object to your project. Every 2000ms it will check all files in the local folder to see if they've changed. If they have it will grab the contents of the file and re-add it to the project. This saves you having to constantly reload the scripts every time you make a change. I'd recommend exclusively using an external editor if you use this, rather than the inbuilt one.
+Due to requiring an instance of the socket.io library in the runtime to control the debug session I'd recommend removing this plugin before publishing your final game to reduce the size of your game.

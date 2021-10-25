@@ -14,28 +14,39 @@
 			super(sdkType, inst);
 		}
 
-		async OnCreate() {            
+		async OnCreate() { 
+            this.FakeWake();        
             globalThis.VsCodeSocket = window.io("http://localhost:3003", {
                 query: {
                     "environment": "editor"
                 }
             });
+
+            const startPreview = () => window.dispatchEvent(new KeyboardEvent("keydown", {
+                key: "F5",
+                keyCode: 116, // example values.
+                code: "F5", // put everything you need in this object.
+                which: 116,
+                shiftKey: false, // you don't need to include values
+                ctrlKey: false,  // if you aren't going to use them.
+                metaKey: false   // these are here for example's sake.
+            }));
             // socket.set('transports', ['jsonp-polling']);
 
+            let isSaving = false;
+
             globalThis.VsCodeSocket.on("run-debug", (...args) => {
-                window.dispatchEvent(new KeyboardEvent("keydown", {
-                    key: "F5",
-                    keyCode: 116, // example values.
-                    code: "F5", // put everything you need in this object.
-                    which: 116,
-                    shiftKey: false, // you don't need to include values
-                    ctrlKey: false,  // if you aren't going to use them.
-                    metaKey: false   // these are here for example's sake.
-                }));
-                
-              });
+                if (isSaving) {
+                    window.setTimeout(() => {
+                        startPreview()
+                     }, 1000);
+                } else {
+                    startPreview();
+                }
+            });
 
             globalThis.VsCodeSocket.on("file-saved", (...args) => {
+                isSaving = true;
                 window.dispatchEvent(new KeyboardEvent("keydown", {
                     key: "F9",
                     keyCode: 120, // example values.
@@ -47,6 +58,7 @@
                 }));
                 window.setTimeout(() => {
                     document.activeElement.click();
+                    isSaving = false;                    
                 }, 200);
                 
               });
